@@ -4,7 +4,6 @@
         <record id="estate_property_tree_view" model="ir.ui.view">
             <field name="name">estate.property.list</field>
             <field name="model">estate.property</field>
-
             <field name="arch" type="xml">
                 <list>
                     <field name="name"/>
@@ -13,12 +12,10 @@
                     <field name="expected_price"/>
                     <field name="best_offer"/>
                     <field name="selling_price"/>
-
-
                 </list>
-
             </field>
         </record>
+
 
         <record id="estate_property_form_view" model="ir.ui.view">
             <field name="name">estate.property.form</field>
@@ -29,21 +26,18 @@
                         <group>
                             <field name="name"/>
                             <group>
-                                 <field name="postcode"/>
+                                <field name="postcode"/>
                                 <field name="date_availability"/>
                             </group>
                             <group>
-                                 <field name="expected_price"/>
+                                <field name="expected_price"/>
                                 <field name="best_offer"/>
                                 <field name="selling_price"/>
-
                             </group>
                         </group>
                     </sheet>
                 </form>
             </field>
-
-
         </record>
 
 
@@ -53,8 +47,8 @@
             <field name="view_mode">list,form</field>
             <field name="view_id" ref="estate_property_tree_view"/>
             <field name="help" type="html">
-                <p class="o_viw_nocontent_smiling_face">
-                    Create a property to Advertise
+                <p class="o_view_nocontent_smiling_face">
+                    Create a Property to Advertise
                 </p>
             </field>
         </record>

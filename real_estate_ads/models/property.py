@@ -5,7 +5,9 @@ class Property(models.Model):
     _name = 'estate.property'
     _description = "Real Estate Property"
 
+
     name = fields.Char(string = "Name" , required = True)
+    type_id=fields.Many2one('estate.property.type',string="Property Type")
     description = fields.Text(string = "Description")
     postcode = fields.Char(string = "Postcode")
     date_availability = fields.Date(string = "Available From")
@@ -21,7 +23,15 @@ class Property(models.Model):
     garden_orientation = fields.Selection(
         [('north' , 'North') , ('south' , 'South'), ('east' , 'East') , ('west' , 'West')], string = "Garden Orientation" , default = "north")
 
-    """id, create_date, create_uid, write_date, write_uid"""
+class PropertyType(models.Model):
+    _name='estate.property.type'
+    _description = "Property Type"
+    name=fields.Char(string="Name" ,required=True)
+
+class PropertyTag(models.Model):
+    _name='estate.property.tag'
+    _description = "Property tag"
+    name=fields.Char(string="Name" ,required=True)
 
 
 

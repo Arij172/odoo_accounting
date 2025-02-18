@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- Menuitem racine -->
+        <menuitem id="menu_custom_accounting_root" name="Custom Accounting" sequence="10"/>
+
+        <!-- Menuitem pour afficher les écritures comptables -->
+        <menuitem id="menu_custom_accounting" name="Customers" parent="menu_custom_accounting_root" sequence="20"/>
+
+        <!-- Sous-menu pour les factures -->
+        <menuitem id="menu_invoices" name="Invoices" parent="menu_custom_accounting" action="action_custom_accounting" sequence="30"/>
+    </data>
+</odoo>

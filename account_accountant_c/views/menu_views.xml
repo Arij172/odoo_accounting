@@ -9,5 +9,8 @@
 
         <!-- Sous-menu pour les factures -->
         <menuitem id="menu_invoices" name="Invoices" parent="menu_custom_accounting" action="action_custom_accounting" sequence="30"/>
+
+        <menuitem id="menu_customers" name="Customers" parent="menu_custom_accounting" action="action_custom_partner" sequence="40"/>
+
     </data>
 </odoo>

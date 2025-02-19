@@ -1,0 +1,27 @@
+<odoo>
+    <!-- Action pour ouvrir la vue des partenaires -->
+    <record id="action_custom_partner" model="ir.actions.act_window">
+        <field name="name">Custom Partners</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[]</field>
+        <field name="context">{}</field>
+        <field name="search_view_id" ref="base.view_res_partner_filter"/>
+    </record>
+
+    <!-- Héritage de la vue formulaire des partenaires -->
+    <record id="view_partner_form_inherit" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+
+    </record>
+
+    <!-- Héritage de la vue liste des partenaires -->
+    <record id="view_partner_tree_inherit" model="ir.ui.view">
+        <field name="name">res.partner.list.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_tree"/>
+
+    </record>
+</odoo>

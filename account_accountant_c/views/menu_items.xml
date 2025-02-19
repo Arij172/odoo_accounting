@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <menuitem name="Accounting CE" id="menu_root_accounting_ce" web_icon="account_accountant_c,static/description/icon.png">
+        <menuitem id="menu_accounting_ce" name="Dashboard"/>
+        <menuitem id="menu_accounting_customers" name="Customers">
+            <menuitem id="menu_invoices" name="Invoices" action="real_estate_ads.action_invoices"/>
+        </menuitem>
+    </menuitem>
+</odoo>

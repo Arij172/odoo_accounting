@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Action pour afficher les paiements filtrés par partenaire -->
+    <record id="action_custom_payments" model="ir.actions.act_window">
+        <field name="name">Payments</field>
+        <field name="res_model">account.payment</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[]</field> <!-- Domaine pour filtrer les paiements par partenaire -->
+    </record>
+
+    <!-- Vue du formulaire du partenaire (formulaire) avec l'onglet Payments -->
+    <record id="view_partner_form_custom" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit.payments</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Payments">
+                    <field name="payment_ids">
+                        <form>
+                            <field name="payment_type"/>
+                            <field name="amount"/>
+                            <field name="state"/>
+                            <field name="date"/>
+                        </form>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+
+
+
+
+</odoo>

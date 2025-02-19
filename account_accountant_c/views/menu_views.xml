@@ -11,7 +11,6 @@
         <menuitem id="menu_invoices" name="Invoices" parent="menu_custom_accounting" action="action_custom_accounting" sequence="30"/>
         <menuitem id="menu_payments" name="Payments" parent="menu_custom_accounting" action="action_custom_payments" sequence="40"/>
         <menuitem id="menu_customers" name="Customers" parent="menu_custom_accounting" action="action_custom_partner" sequence="50"/>
-        <menuitem id="menu_products" name="Products" parent="menu_custom_accounting" action="action_custom_products" sequence="60"/>
 
 
 

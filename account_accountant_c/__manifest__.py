@@ -14,6 +14,7 @@
         'views/account_move_view.xml',  # Vues pour les écritures comptables
         'views/partner_views.xml',       # Vues pour les clients/fournisseurs
         'views/res_partner_views.xml',
+        'views/product_views.xml',
         'views/menu_views.xml'         # Menuitems
     ],
     'installable': True,

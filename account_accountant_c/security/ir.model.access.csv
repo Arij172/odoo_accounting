@@ -3,3 +3,4 @@ access_account_move_custom,access_account_move_custom,model_account_move,,1,1,1,
 access_res_partner_custom,access_res_partner_custom,model_res_partner,,1,1,1,1
 access_account_move_custom,access_account_move_custom,account.model_account_move,,1,1,1,1
 access_account_payment_custom,Access Account Payment Custom,account.model_account_payment,,1,1,1,1
+access_product_template_custom,Access Product Template Custom,product.model_product_template,,1,1,1,1

@@ -29,9 +29,7 @@
         </field>
     </record>
 
-    <odoo>
-
-    <!-- Action pour afficher les notes de crédit filtrées par partenaire -->
+<!-- Action pour afficher les notes de crédit filtrées par partenaire -->
     <record id="action_custom_credit_notes" model="ir.actions.act_window">
         <field name="name">Credit Notes</field>
         <field name="res_model">account.move</field>
@@ -40,7 +38,7 @@
     </record>
 
     <!-- Héritage de la vue formulaire du partenaire pour ajouter les notes de crédit -->
-    <record id="view_partner_form_custom" model="ir.ui.view">
+    <record id="view_partner_form_custom_credit_notes" model="ir.ui.view">
         <field name="name">res.partner.form.inherit.credit_notes</field>
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"/>
@@ -66,8 +64,21 @@
         </field>
     </record>
 
-
-
+    <record id="base.view_view_form" model="ir.ui.view">
+        <field name="name">account.move.form.inherit.credit_notes</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet" position="inside">
+                <group>
+                    <field name="partner_id"/>
+                    <field name="invoice_date"/>
+                    <field name="amount_total"/>
+                    <field name="state"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
 </odoo>
 
 
@@ -75,4 +86,3 @@
 
 
 
-</odoo>

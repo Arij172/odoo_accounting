@@ -15,7 +15,7 @@
         <menuitem id="menu_products" name="Products" parent="menu_custom_accounting" action="action_custom_products" sequence="70"/>
 
         <menuitem id="menu_custom_accounting_vendor" name="Vendors" parent="menu_custom_accounting_root" sequence="30"/>
-        <menuitem id="menu_bills" name="Bill" parent="menu_custom_accounting_vendor" action="action_custom_bills" sequence="10"/>
+        <menuitem id="menu_bills" name="Bills" parent="menu_custom_accounting_vendor" action="action_custom_bills" sequence="10"/>
 
 
     </data>

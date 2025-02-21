@@ -15,6 +15,8 @@
         'views/partner_views.xml',       # Vues pour les clients/fournisseurs
         'views/res_partner_views.xml',
         'views/product_views.xml',
+        'views/bill_views.xml',
+        'security/security.xml',
         'views/menu_views.xml'         # Menuitems
     ],
     'installable': True,

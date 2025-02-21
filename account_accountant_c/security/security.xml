@@ -1,0 +1,7 @@
+<odoo>
+    <!-- Groupe d'utilisateurs pour les factures fournisseurs -->
+    <record id="group_custom_bills" model="res.groups">
+        <field name="name">Custom Bills</field>
+        <field name="category_id" ref="base.module_category_accounting"/>
+    </record>
+</odoo>

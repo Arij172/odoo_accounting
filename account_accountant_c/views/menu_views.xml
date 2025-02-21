@@ -17,6 +17,8 @@
         <menuitem id="menu_custom_accounting_vendor" name="Vendors" parent="menu_custom_accounting_root" sequence="30"/>
         <menuitem id="menu_bills" name="Bills" parent="menu_custom_accounting_vendor" action="action_custom_bills" sequence="10"/>
 
+        <menuitem id="menu_custom_accounting_accounting" name="Accounting" parent="menu_custom_accounting_root" sequence="40"/>
+        <menuitem id="menu_journal_entries" name="Journal Entries" parent="menu_custom_accounting_accounting" action="action_custom_accounting_accounting" sequence="10"/>
 
     </data>
 </odoo>

@@ -1,0 +1,37 @@
+<odoo>
+
+    <!-- Action pour ouvrir la vue des factures fournisseurs -->
+    <record id="action_custom_bills" model="ir.actions.act_window">
+        <field name="name">Custom Bills</field>
+        <field name="res_model">account.move</field>  <!-- Modèle des écritures comptables -->
+        <field name="view_mode">list,form,kanban</field>    <!-- Modes de vue (liste, formulaire) -->
+        <field name="domain">[('move_type', '=', 'in_invoice')]</field>  <!-- Filtre pour les factures fournisseurs -->
+        <field name="context">{'default_move_type': 'in_invoice'}</field>  <!-- Contexte par défaut -->
+    </record>
+
+    <!-- Héritage de la vue liste des factures fournisseurs -->
+    <record id="view_in_invoice_bill_tree_inherit" model="ir.ui.view">
+        <field name="name">account.move.list.inherit</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_in_invoice_bill_tree"/>  <!-- ID de la vue existante -->
+
+    </record>
+
+    <!-- Héritage de la vue formulaire des factures fournisseurs -->
+    <record id="view_account_move_form_inherit" model="ir.ui.view">
+        <field name="name">account.move.form.inherit</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>  <!-- ID de la vue existante -->
+
+    </record>
+
+
+
+    <!-- Héritage de la vue kanban des factures fournisseurs (si applicable) -->
+    <record id="view_account_move_kanban_inherit" model="ir.ui.view">
+        <field name="name">account.move.kanban.inherit</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_account_move_kanban"/>  <!-- ID de la vue existante -->
+
+    </record>
+</odoo>

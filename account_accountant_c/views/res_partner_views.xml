@@ -4,7 +4,7 @@
     <record id="action_custom_payments" model="ir.actions.act_window">
         <field name="name">Payments</field>
         <field name="res_model">account.payment</field>
-        <field name="view_mode">list,form</field>
+        <field name="view_mode">list,form,kanban,activity,graph</field>
         <field name="domain">[]</field> <!-- Domaine pour filtrer les paiements par partenaire -->
     </record>
 
@@ -13,20 +13,8 @@
         <field name="name">res.partner.form.inherit.payments</field>
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"/>
-        <field name="arch" type="xml">
-            <xpath expr="//notebook" position="inside">
-                <page string="Payments">
-                    <field name="payment_ids">
-                        <form>
-                            <field name="payment_type"/>
-                            <field name="amount"/>
-                            <field name="state"/>
-                            <field name="date"/>
-                        </form>
-                    </field>
-                </page>
-            </xpath>
-        </field>
+
+
     </record>
 
 <!-- Action pour afficher les notes de crédit filtrées par partenaire -->
@@ -42,13 +30,7 @@
         <field name="name">res.partner.form.inherit.credit_notes</field>
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"/>
-        <field name="arch" type="xml">
-            <xpath expr="//notebook" position="inside">
-                <page string="Credit Notes">
-                    <field name="credit_note_ids" widget="many2many_tags"/>
-                </page>
-            </xpath>
-        </field>
+
     </record>
 
     <!-- Héritage de la vue liste des écritures comptables pour inclure les notes de crédit -->
@@ -56,28 +38,13 @@
         <field name="name">account.move.list.inherit.credit_notes</field>
         <field name="model">account.move</field>
         <field name="inherit_id" ref="account.view_move_tree"/>
-        <field name="arch" type="xml">
-            <!-- Ajouter un champ personnalisé dans la liste des écritures comptables -->
-            <xpath expr="//field[@name='ref']" position="after">
-                <field name="custom_field"/>
-            </xpath>
-        </field>
+
     </record>
 
     <record id="base.view_view_form" model="ir.ui.view">
         <field name="name">account.move.form.inherit.credit_notes</field>
         <field name="model">account.move</field>
-        <field name="inherit_id" ref="account.view_move_form"/>
-        <field name="arch" type="xml">
-            <xpath expr="//sheet" position="inside">
-                <group>
-                    <field name="partner_id"/>
-                    <field name="invoice_date"/>
-                    <field name="amount_total"/>
-                    <field name="state"/>
-                </group>
-            </xpath>
-        </field>
+
     </record>
 </odoo>
 

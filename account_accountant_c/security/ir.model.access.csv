@@ -1,7 +1,6 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_account_move_custom,access_account_move_custom,model_account_move,,1,1,1,1
-access_res_partner_custom,access_res_partner_custom,model_res_partner,,1,1,1,1
-access_account_move_custom,access_account_move_custom,account.model_account_move,,1,1,1,1
+access_account_move_custom,Access Account Move Custom,account.model_account_move,,1,1,1,1
+access_res_partner_custom,Access Res Partner Custom,base.model_res_partner,,1,1,1,1
 access_account_payment_custom,Access Account Payment Custom,account.model_account_payment,,1,1,1,1
 access_product_template_custom,Access Product Template Custom,product.model_product_template,,1,1,1,1
 access_account_move_bills,Access Account Move Bills,account.model_account_move,,1,1,1,1

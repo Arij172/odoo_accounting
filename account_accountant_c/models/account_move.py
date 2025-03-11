@@ -2,8 +2,8 @@ from odoo import models, fields
 
 class AccountMove(models.Model):
     _inherit = 'account.move'  # Héritage du modèle existant
-
-    custom_field = fields.Char(string="Champ Personnalisé", help="Ceci est un champ personnalisé pour les écritures comptables.")
+    _inherit='account.payment'
+    custom_field = fields.Char(string="    ",readonly=True,invisible=True)
 
     partner_id = fields.Many2one('res.partner', string='Customer', ondelete='cascade', index=True, store=True)
 

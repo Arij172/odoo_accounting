@@ -17,7 +17,13 @@
         'views/product_views.xml',
         'views/journal_entries_view.xml',
         'views/bill_views.xml',
+        'views/refunds_views.xml',
+        'views/vendor_payments_views.xml',
+        'views/product_vendor_views.xml',
+        'views/vendor_views.xml',
+
         'security/security.xml',
+
         'views/menu_views.xml'         # Menuitems
     ],
     'installable': True,

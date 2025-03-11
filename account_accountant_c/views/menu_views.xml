@@ -16,6 +16,10 @@
 
         <menuitem id="menu_custom_accounting_vendor" name="Vendors" parent="menu_custom_accounting_root" sequence="30"/>
         <menuitem id="menu_bills" name="Bills" parent="menu_custom_accounting_vendor" action="action_custom_bills" sequence="10"/>
+        <menuitem id="menu_refunds" name="Refunds" parent="menu_custom_accounting_vendor" action="action_move_in_refund_type_inherit" sequence="20"/>
+        <menuitem id="menu_payments_vendor" name="Payments" parent="menu_custom_accounting_vendor" action="custom_vendor_payments_action" sequence="30"/>
+        <menuitem id="menu_product_vendor" name="Products" parent="menu_custom_accounting_vendor" action="custom_product_action_purchasable" sequence="40"/>
+        <menuitem id="menu_vendors" name="Vendors" parent="menu_custom_accounting_vendor" action="custom_res_partner_action_supplier" sequence="50"/>
 
         <menuitem id="menu_custom_accounting_accounting" name="Accounting" parent="menu_custom_accounting_root" sequence="40"/>
         <menuitem id="menu_journal_entries" name="Journal Entries" parent="menu_custom_accounting_accounting" action="action_custom_accounting_accounting" sequence="10"/>

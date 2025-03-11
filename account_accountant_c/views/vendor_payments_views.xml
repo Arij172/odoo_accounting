@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- Héritage de l'action "Vendor Payments" -->
+        <record id="custom_vendor_payments_action" model="ir.actions.act_window">
+            <field name="name">Payments</field>
+            <field name="res_model">account.payment</field>
+             <field name="view_mode">list,form,kanban,graph,activity</field>
+            <field name="context">{'default_payment_type': 'outbound', 'default_partner_type': 'supplier', 'search_default_outbound_filter': 1, 'default_move_journal_types': ('bank', 'cash'), 'display_account_trust': True, 'custom_field': True}</field>
+        </record>
+    </data>
+</odoo>

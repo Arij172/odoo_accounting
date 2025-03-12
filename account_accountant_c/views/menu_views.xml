@@ -22,7 +22,10 @@
         <menuitem id="menu_vendors" name="Vendors" parent="menu_custom_accounting_vendor" action="custom_res_partner_action_supplier" sequence="50"/>
 
         <menuitem id="menu_custom_accounting_accounting" name="Accounting" parent="menu_custom_accounting_root" sequence="40"/>
-        <menuitem id="menu_journal_entries" name="Journal Entries" parent="menu_custom_accounting_accounting" action="action_custom_accounting_accounting" sequence="10"/>
+        <menuitem id="menu_journal_entries" name="Journal Entries" parent="menu_custom_accounting_accounting" action="account.action_move_journal_line" sequence="10"/>
+        <menuitem id="menu_journal_items" name="Journal Items" parent="menu_custom_accounting_accounting" action="action_account_moves_all_inherit" sequence="20"/>
+        <menuitem id="menu_analytic_items" name="Analytic Items" parent="menu_custom_accounting_accounting" action="analytic_account_analytic_line_action_entries" sequence="30"/>
+
 
     </data>
 </odoo>

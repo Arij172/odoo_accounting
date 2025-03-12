@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-
         <!-- Héritage de l'action existante -->
         <record id="custom_product_action_purchasable" model="ir.actions.act_window">
             <field name="name">Products</field>  <!-- Modifier le nom si nécessaire -->
@@ -9,6 +8,5 @@
             <field name="context">{'search_default_filter_to_purchase': 1, 'additional_context': 'value'}</field>
              <field name="view_mode">list,form,kanban,activity</field>
         </record>
-
     </data>
 </odoo>

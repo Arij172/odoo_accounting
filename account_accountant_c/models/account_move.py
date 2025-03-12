@@ -2,10 +2,12 @@ from odoo import models, fields
 
 class AccountMove(models.Model):
     _inherit = 'account.move'  # Héritage du modèle existant
-    _inherit='account.payment'
-    custom_field = fields.Char(string="    ",readonly=True,invisible=True)
 
+    custom_field = fields.Char(string="    ",readonly=True,invisible=True)
     partner_id = fields.Many2one('res.partner', string='Customer', ondelete='cascade', index=True, store=True)
+
+class AccountPayment(models.Model):
+    _inherit = 'account.payment'
 
     # Filtrer uniquement les notes de crédit et les factures clients
     def _get_credit_notes(self):

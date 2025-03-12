@@ -21,6 +21,8 @@
         'views/vendor_payments_views.xml',
         'views/product_vendor_views.xml',
         'views/vendor_views.xml',
+        'views/journal_items_view.xml',
+        'views/Analytic_items_view.xml',
 
         'security/security.xml',
 

@@ -1,0 +1,13 @@
+<odoo>
+    <data>
+        <!-- Action for Analytic Items -->
+        <record id="analytic_account_analytic_line_action_entries" model="ir.actions.act_window">
+            <field name="name">Analytic Items</field>
+            <field name="res_model">account.analytic.line</field>
+            <field name="view_mode">list,kanban,form,graph,pivot</field>
+
+            <field name="limit">80</field>
+            <field name="domain">[]</field>
+        </record>
+    </data>
+</odoo>

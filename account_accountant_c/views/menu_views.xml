@@ -26,6 +26,9 @@
         <menuitem id="menu_journal_items" name="Journal Items" parent="menu_custom_accounting_accounting" action="action_account_moves_all_inherit" sequence="20"/>
         <menuitem id="menu_analytic_items" name="Analytic Items" parent="menu_custom_accounting_accounting" action="analytic_account_analytic_line_action_entries" sequence="30"/>
 
+        <menuitem id="menu_custom_accounting_configuration" name="Configuration" parent="menu_custom_accounting_root" sequence="50"/>
+        <menuitem id="menu_settings" name="Settings" parent="menu_custom_accounting_configuartion" action="account.action_move_journal_line" sequence="10"/>
+
 
     </data>
 </odoo>

@@ -27,7 +27,7 @@
         <menuitem id="menu_analytic_items" name="Analytic Items" parent="menu_custom_accounting_accounting" action="analytic_account_analytic_line_action_entries" sequence="30"/>
 
         <menuitem id="menu_custom_accounting_configuration" name="Configuration" parent="menu_custom_accounting_root" sequence="50"/>
-        <menuitem id="menu_settings" name="Settings" parent="menu_custom_accounting_configuartion" action="account.action_move_journal_line" sequence="10"/>
+        <menuitem id="menu_chart_of_accounts" name="Chart of accounts" parent="menu_custom_accounting_configuration" action="action_account_form_inherit" sequence="20"/>
 
 
     </data>

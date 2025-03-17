@@ -1,0 +1,13 @@
+<odoo>
+    <data>
+        <!-- Action for Analytic Items -->
+        <record id="inherit_currency_action" model="ir.actions.act_window">
+            <field name="name">Currencies</field>
+            <field name="res_model">res.currency</field>
+            <field name="view_mode">list,kanban,form</field>
+            <field name="context">{'active_test': False}</field>
+            <field name="limit">80</field>
+
+        </record>
+    </data>
+</odoo>

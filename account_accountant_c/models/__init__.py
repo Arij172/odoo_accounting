@@ -5,3 +5,4 @@ from . import product
 from . import account_move_line
 from . import analytic_line
 from . import customers_batch_payments
+from . import res_currency

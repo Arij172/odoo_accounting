@@ -28,8 +28,10 @@
         <menuitem id="menu_analytic_items" name="Analytic Items" parent="menu_custom_accounting_accounting" action="analytic_account_analytic_line_action_entries" sequence="30"/>
 
         <menuitem id="menu_custom_accounting_configuration" name="Configuration" parent="menu_custom_accounting_root" sequence="50"/>
-        <menuitem id="menu_settings" name="Settings" parent="menu_custom_accounting_configuration" action="account.action_move_journal_line" sequence="10"/>
 
+        <menuitem id="menu_accounting" name="Accounting" parent="menu_custom_accounting_configuration" sequence="10"/>
+
+        <menuitem id="menu_currencies" name="Currencies" parent="menu_accounting" action="inherit_currency_action" sequence="10"/>
 
     </data>
 </odoo>

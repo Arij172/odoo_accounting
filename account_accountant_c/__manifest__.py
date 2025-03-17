@@ -24,6 +24,7 @@
         'views/journal_items_view.xml',
         'views/Analytic_items_view.xml',
         'views/customers_batch_payments.xml',
+        'views/currencies_view.xml',
 
         'security/security.xml',
 

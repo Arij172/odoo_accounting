@@ -11,8 +11,9 @@
         <menuitem id="menu_invoices" name="Invoices" parent="menu_custom_accounting" action="action_custom_accounting" sequence="30"/>
         <menuitem id="menu_credit_notes" name="Credit Notes" parent="menu_custom_accounting" action="action_custom_credit_notes" sequence="40"/>
         <menuitem id="menu_payments" name="Payments" parent="menu_custom_accounting" action="action_custom_payments" sequence="50"/>
-        <menuitem id="menu_customers" name="Customers" parent="menu_custom_accounting" action="action_custom_partner" sequence="60"/>
-        <menuitem id="menu_products" name="Products" parent="menu_custom_accounting" action="action_custom_products" sequence="70"/>
+        <menuitem id="menu_batch_payments" name=" Batch Payments" parent="menu_custom_accounting" action="action_accounting_batch_payment" sequence="60"/>
+        <menuitem id="menu_customers" name="Customers" parent="menu_custom_accounting" action="action_custom_partner" sequence="70"/>
+        <menuitem id="menu_products" name="Products" parent="menu_custom_accounting" action="action_custom_products" sequence="80"/>
 
         <menuitem id="menu_custom_accounting_vendor" name="Vendors" parent="menu_custom_accounting_root" sequence="30"/>
         <menuitem id="menu_bills" name="Bills" parent="menu_custom_accounting_vendor" action="action_custom_bills" sequence="10"/>
@@ -27,6 +28,7 @@
         <menuitem id="menu_analytic_items" name="Analytic Items" parent="menu_custom_accounting_accounting" action="analytic_account_analytic_line_action_entries" sequence="30"/>
 
         <menuitem id="menu_custom_accounting_configuration" name="Configuration" parent="menu_custom_accounting_root" sequence="50"/>
+        <menuitem id="menu_settings" name="Settings" parent="menu_custom_accounting_configuration" action="account.action_move_journal_line" sequence="10"/>
         <menuitem id="menu_chart_of_accounts" name="Chart of accounts" parent="menu_custom_accounting_configuration" action="action_account_form_inherit" sequence="20"/>
 
 

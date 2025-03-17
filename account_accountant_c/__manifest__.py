@@ -23,7 +23,9 @@
         'views/vendor_views.xml',
         'views/journal_items_view.xml',
         'views/Analytic_items_view.xml',
+        'views/customers_batch_payments.xml',
         'views/chart_of_accounts_views.xml',
+
 
         'security/security.xml',
 

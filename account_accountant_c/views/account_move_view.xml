@@ -2,7 +2,7 @@
 
     <!-- Action pour afficher les écritures comptables -->
     <record id="action_custom_accounting" model="ir.actions.act_window">
-        <field name="name">Custom Accounting</field>
+        <field name="name">Invoices</field>
         <field name="res_model">account.move</field>
         <field name="view_mode">list,form,kanban,activity</field>
         <field name="domain">[('move_type', '=', 'out_invoice')]</field>  <!-- Filtre pour les factures clients -->
